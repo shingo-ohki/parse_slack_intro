@@ -1,0 +1,16 @@
+{
+    "name": "Python AI Parser",
+    "build": {
+      "dockerfile": "../Dockerfile"
+    },
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+      "ms-python.python",
+      "ms-azuretools.vscode-docker"
+    ],
+    "forwardPorts": [11434],
+    "postCreateCommand": "pip install --no-cache-dir -r /workspace/requirements.txt"
+  }
+  
